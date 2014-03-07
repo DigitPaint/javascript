@@ -24,6 +24,7 @@ Forked from the excellent Airbnb JavaScript Style Guide, slightly modified to fi
   1. [Naming Conventions](#naming-conventions)
   1. [Accessors](#accessors)
   1. [Constructors](#constructors)
+  1. [Scope](#scope)
   1. [Events](#events)
   1. [Modules](#modules)
   1. [jQuery](#jquery)
@@ -1250,6 +1251,39 @@ Forked from the excellent Airbnb JavaScript Style Guide, slightly modified to fi
 
     **[[⬆]](#TOC)**
 
+## <a name='scope'>Scope</a>
+
+- When handling scope (this) reassigning prefer the use of `.bind()` instead of saving a reference to `this` by setting `_this`. In some complex cases it's better to use `_this`.
+
+    ```javascript
+    // bad
+    function(){
+      var self = this;
+      this.foo = "bar";
+      return function(){
+        console.log(self.foo)
+      }.bind(this);
+    }
+
+    // ok
+    function(){
+      var _this = this;
+      this.foo = "bar";
+      return function(){
+        console.log(_this.foo)
+      }.bind(this);
+    }
+
+
+    // preferred
+    function(){
+      this.foo = "bar";
+      return function(){
+        console.log(this.foo)
+      }.bind(this);
+    }
+    ```
+- If using `Function.bind()` and you need to [support older browsers](http://kangax.github.io/es5-compat-table/#Function.prototype.bind), make sure you load an appropriate polyfill (or use `.apply(..)` or `.call(..)` instead.
 
 ## <a name='events'>Events</a>
 
