@@ -13,6 +13,9 @@
   // Define globals exposed by Node.js.
   "node": true,
 
+  // Placeholder for your own predefs 
+  "predef": [],
+
   /*
    * ENFORCING OPTIONS
    * =================
@@ -53,5 +56,35 @@
   "maxlen": 80,
 
   // Enforce placing 'use strict' at the top function scope
-  "strict": true
+  "strict": true,
+
+  // Extra options by Digitpaint
+
+  // Always put curly braces around blocks in loops and conditionals
+  "curly": true,
+
+  // Prohibits the use of arguments.caller and arguments.callee
+  "noarg": true,
+
+  // Supress warnings about mixed tabs/spaces when used for alignment.
+  "smarttabs" : true,
+
+  // Prohibit use of constructors for side-effects.
+  "nonew": true,
+
+  // Allow the use of ++ and --
+  "plusplus" : false,
+
+  // Tolerate all forms of subscript notation besides dot notation e.g. `dict['key']` instead of `dict.key`.
+  "subsub": false,
+
+  /*
+   * OPTIONAL OPTIONS
+   * =================
+   */
+
+  // Do not allow bitwise operations
+  "bitwise": true
 }
+
+
