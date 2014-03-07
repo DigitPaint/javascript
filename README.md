@@ -1,7 +1,8 @@
-# Airbnb JavaScript Style Guide() {
+# Digitpaint JavaScript Style Guide() {
 
 *A mostly reasonable approach to JavaScript*
 
+Forked from the excellent Airbnb JavaScript Style Guide, slightly modified to fit Digitpaint's conventions.
 
 ## <a name='TOC'>Table of Contents</a>
 
