@@ -6,6 +6,7 @@ Forked from the excellent Airbnb JavaScript Style Guide, slightly modified to fi
 
 ## <a name='TOC'>Table of Contents</a>
 
+  1. [Files](#files)
   1. [Types](#types)
   1. [Objects](#objects)
   1. [Arrays](#arrays)
@@ -37,6 +38,12 @@ Forked from the excellent Airbnb JavaScript Style Guide, slightly modified to fi
   1. [The JavaScript Style Guide Guide](#guide-guide)
   1. [Contributors](#contributors)
   1. [License](#license)
+
+## <a name='files'>Files</a>
+
+  - Avoid version numbers in filenames; this makes updating hard and you probably do not want multiple versions of the same library in your project anyway.
+
+  - Avoid adding minified versions in development; minification should be handled in the release process.
 
 ## <a name='types'>Types</a>
 
