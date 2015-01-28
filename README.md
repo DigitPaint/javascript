@@ -643,6 +643,8 @@ Forked from the excellent Airbnb JavaScript Style Guide, slightly modified to fi
 
 ## <a name='comments'>Comments</a>
 
+  - Always write comments in English. Translate where necessary.
+
   - Use `/** ... */` for multiline comments. Include a description, specify types and values for all parameters and return values.
 
     ```javascript
