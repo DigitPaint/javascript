@@ -12,6 +12,7 @@
 1. [Example karma config](#default-configuration)
 
 ## Introduction
+
 This guideline describes how to set up a testing stack for front-end projects.
 It's hard to define a (check)list of libraries, that should be used at every project.
 This is because libraries are changing every day.
