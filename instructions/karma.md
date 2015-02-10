@@ -16,7 +16,7 @@
 This guideline describes how to set up a testing stack for front-end projects.
 It's hard to define a (check)list of libraries, that should be used at every project.
 This is because libraries are changing every day.
-Besides that, projects are not always the same, so sometimes a different specific testsuite fits the project.
+Besides that, projects are not always the same, so sometimes a different set of tools fit the project better.
 The tooling below is based on a project we worked on recently.
 
 ## Karma
@@ -31,7 +31,7 @@ The tooling below is based on a project we worked on recently.
 * [Karma on GitHub](https://github.com/karma-runner/karma)
 
 You can start quickly with [Karma](http://karma-runner.github.io/) by running (after the installation) `$ karma init `.
-Below are some useful default when developing a project in [digitpaint/roger](https://github.com/DigitPaint/roger).
+Below are some useful defaults when developing a project in [digitpaint/roger](https://github.com/DigitPaint/roger).
 ```
     files: [
       'test/test-main.js',
