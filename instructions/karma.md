@@ -6,7 +6,7 @@
 1. [Karma](#karma)
 1. [Karma-chai](#karma-chai)
 1. [Karma-mocha](#karma-mocha)
-1. [karma-phantomjs-launcher](#phantomjs)
+1. [Karma-phantomjs-launcher](#phantomjs)
 1. [Karma-sinon-chai](#karma-sinon-chai)
 1. [Karma-mocha-reporter](#karma-mocha-reporter)
 1. [Example karma config](#default-configuration)
@@ -175,7 +175,7 @@ Configure it in the karma.conf.js as follows:
 
 To give our logging of the test some body, our standard is to use karma-mocha-reporter instead of dots or progress reporters.
 
-This gives us for example to following logging when running the tests:
+This gives us for example the following logging when running the tests:
 ```
     A Facet
         by default
