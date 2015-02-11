@@ -30,7 +30,7 @@ Forked from the excellent Airbnb JavaScript Style Guide, slightly modified to fi
   1. [Modules](#modules)
   1. [jQuery](#jquery)
   1. [ES5 Compatibility](#es5)
-  1. [(Unit)Testing](#testing)
+  1. [Unit testing](#testing)
   1. [Performance](#performance)
   1. [Resources](#resources)
   1. [In the Wild](#in-the-wild)
@@ -1425,30 +1425,24 @@ Forked from the excellent Airbnb JavaScript Style Guide, slightly modified to fi
   **[[⬆]](#TOC)**
 
 
-## <a name='testing'>(Unit)Testing</a>
+## <a name='testing'>Unit testing</a>
 
-The first question that pops into your head might be, why should I write unit tests for client-side code. Well there are a lot reasons why you should test your code.
+  - Write unit tests wherever possible but don't test vendor or library code.
 
-**Why should I write tests?**
+  - Make sure all your tests pass.
 
-  - Unit tests proves that your code works as you expected.
-  - It is free documentation for your code.
-  - You can add and change code and see directly if your changes/additions
-  break something.
-  - Tests are the requirements written in code.
-  - Tests let you know when you can stop code, once it passes you know your code is good enough and meets the requirements.
-  - etc..
+  - Write descriptive tests; they should be human readable.
 
-**What should be tested?**  
-What you definitely should test is your own code, and not code from a vendor or used library. This code should already be well tested. 
+  - Write tests to requirements, not to your specific code
 
-**How should I test?**  
-This depends on the project you're going to work on. When using [Roger](https://github.com/DigitPaint/roger), you can look for our document that list and describes test-tools which form a good base for your testing environment. 
+  - Write positive as well as negative tests
 
-[Read here our karma instructions](instructions/karma.md)
+  - Use a testing framework like Karma to run tests in multiple environments/browsers. See our instructions on [how to set up a Karma environment](instructions/karma.md)
+
 
 **Good reads:**
 
+  - [Set up a Karma/Mocha/Chai base system](instructions/karma.md)
   - [Introducing to JS Unit testing](http://www.smashingmagazine.com/2012/06/27/introduction-to-javascript-unit-testing/)
   - [Writing testable code](http://alistapart.com/article/writing-testable-javascript)
   - [JS Unit testing and why](http://thomas.junghans.co.za/blog/2013/06/25/javascript-unit-testing-and-why/)
