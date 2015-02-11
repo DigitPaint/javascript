@@ -76,15 +76,22 @@
   "plusplus" : false,
 
   // Tolerate all forms of subscript notation besides dot notation e.g. `dict['key']` instead of `dict.key`.
-  "subsub": false,
+  "sub": false,
 
   /*
-   * OPTIONAL OPTIONS
+   * Extra Digitpaint options
    * =================
    */
 
-  // Do not allow bitwise operations
-  "bitwise": true
+  // Allow bitwise operations
+  "bitwise": false,
+
+  // Don't allow extending of native objects
+  "freeze" : true,
+
+  // Don't allow non-breaking whitespace
+  "nonbsp" : true
+
 }
 
 
